@@ -21,7 +21,7 @@ def result(urls):
         s = str(data[i].values()) #Преобразуем данные из объекта в строку, чтоб изменить их
         s = s.replace('odict_values','').replace('([','').replace('])', '').replace(';','').replace("'","") #убираем лишние символы
         base_url = "https://fedresurs.ru/search/entity?code=" + s #получаем URL который будем парсить
-        sp = {gug
+        sp = {
             base_url
         }
         spis.append(sp) #Заносим URL'ы в список
